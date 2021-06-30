@@ -1,0 +1,13 @@
+---
+services:
+  - docker
+
+install:
+  - sudo apt-get install -y make
+
+script:
+  - export OPENSHIFT_RELEASE=$(make print_version)
+  - make build
+  - make test
+  - docker login -u "${REGISTRY_USERNAME}" -p "${REGISTRY_PASSWORD}" "${REGISTRY_HOST}"
+  - make push
