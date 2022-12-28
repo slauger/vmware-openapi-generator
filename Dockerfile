@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.3-297.1618432833@sha256:37e09c34bcf8dd28d2eb7ace19d3cf634f8a073058ed63ec6e199e3e2ad33c33
+FROM registry.access.redhat.com/ubi8/ubi:8.6-855@sha256:68fecea0d255ee253acbf0c860eaebb7017ef5ef007c25bee9eeffd29ce85b29
 
 LABEL maintainer="simon@lauger.de"
 
